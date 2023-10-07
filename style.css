@@ -40,18 +40,6 @@ h2 {
     text-align: center;
 }
 
-
-
-/*.recipe-card img {
-    position: relative;
-    max-width: 800px; 
-    margin: 0 auto;
-    border: 5px solid #555;
-}*/
-
-
-
-
 .recipe-card h3 {
         margin: 10px 0;
         font-size: 18px;
@@ -62,15 +50,6 @@ h2 {
         font-size: 16px;
 }
 
-   
-
-/* Navigation menu styles */
-nav ul {
-    list-style-type: none;
-    text-align: center;
-    background-color: #333;
-    padding: 10px;
-}
 
 nav ul li {
         display: inline;
