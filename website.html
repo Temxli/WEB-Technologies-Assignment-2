@@ -4,271 +4,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Stylesheets-->
     <link rel="stylesheet" href="style.css">
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!--Icon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Pacifico&family=Poppins:wght@200;300&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
     <title>Recipe Showcase</title>
 
 </head>
 
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    <header>
-        <h1><em>Welcome to Recipe Showcase &#169;</em></h1>
-        <p><em>Discover and share delicious recipes.</em></p>
-    </header>
+    <a class="navbar-brand nav navbar navbar-expand-lg navbar-light bg-white pt-3 pb-3 logo" href="#">
+        <img src="images/navbaricon.png" width="100" height="60" class="d-inline-block align-top" alt="">
+    </a>
+    <header class="float-right">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white pt-3 pb-3 logo">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-                <img src="images/navbaricon.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            Recipes
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Browse Recipes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Submit a Recipe</a>
-                </li>
-            </ul>
-        </divclass="collapse>
-    </nav>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="float-right">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Browse Recipes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Submit a Recipe</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </nav>
+    </header>
+    <div class="main-banner" id="top">
+        <video autoplay muted loop id="bg-video">
+            <source src="images/video.mp4" type="video/mp4" />
+        </video>
+
+        <div class="video-overlay header-text">
+            <div class="caption">
+                
+                <h2>Recipes for <em>Every Palate:</em> Taste the Possibilities.</h2>
+                <div class="main-button">
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <main>
-        <h2 style="text-align: center;">Featured Recipes</h2>
+        
+        
+        
 
         <!--Carbonara-->
-        <div class="recipe-card">
-            <div class="hhh">
-                <img src="images/spaghetti.jpg" alt="Spaghetti Carbonara" style="width:100%">
-                <div class="content">
-                    <h1><strong>Carbonara</strong></h1>
-                    <p>Before pasta carbonara was created, the Neapolitan pasta dish was first mentioned in a cookbook from 1839</p>
+        <div class="row">
+            <div class="container col-lg-6">
+                <div class="section-heading">
+                    <h2 style="text-align: center;">Featured Recipes</h2>
+                </div>
+                <div class="recipe-card">
+                    <div class="hhh">
+                        <img src="images/spaghetti.jpg" alt="Spaghetti Carbonara" style="width:100%">
+                        <div class="content">
+                            <h1><strong>Carbonara</strong></h1>
+                            <p>Before pasta carbonara was created, the Neapolitan pasta dish was first mentioned in a cookbook from 1839</p>
+                        </div>
+                    </div>
+                    <table class="recipe-table">
+                        <thead>
+                            <tr>
+                                <th>Ingredients</th>
+                                <th>Instructions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Spaghetti</li>
+                                        <li>eggs</li>
+                                        <li>Parmesan</li>
+                                        <li>cheese</li>
+                                        <li>black pepper</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ol>
+                                        <li>Cook spaghetti. </li>
+                                        <li>Cook pancetta. </li>
+                                        <li>Mix eggs and cheese. </li>
+                                        <li>Combine all ingredients.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--Bolognese-->
+                <div class="recipe-card">
+                    <div class="hhh">
+                        <img src="images/bolognese.jpg" alt="bolognese" style="width:100%">
+                        <div class="content">
+                            <h1><strong>Bolognese</strong></h1>
+                            <p>Originated in Imola, a northern Italian city west of Bologna some time around the late 1800s - when the first reference to the dish’s ragu sauce was recorded.</p>
+                        </div>
+                    </div>
+                    <table class="recipe-table">
+                        <thead>
+                            <tr>
+                                <th>Ingredients</th>
+                                <th>Instructions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Onion</li>
+                                        <li>Ground beef</li>
+                                        <li>Tomatoes</li>
+                                        <li>Garlic</li>
+                                        <li>Tomato paste</li>
+                                        <li>Spaghetti</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ol>
+                                        <li>Cook onions with garlic.</li>
+                                        <li>Add beef, wait 8 minutes, then add tomatoes.</li>
+                                        <li>Cook spaghetti.</li>
+                                        <li>Combine all ingredients.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--Fettuccine Alfredo-->
+                <div class="recipe-card">
+                    <div class="hhh">
+                        <img src="images/Fettuccine Alfredo.jpg" alt="Fettuccine" style="width:100%">
+                        <div class="content">
+                            <h1><strong>Fettuccine Alfredo</strong></h1>
+                            <p>The Alfredo part of the name refers to Alfredo di Lelio, who made great ceremony of having the dish prepared table-side at his Rome restaurant in the mid 20th century.</p>
+                        </div>
+                    </div>
+                    <table class="recipe-table">
+                        <thead>
+                            <tr>
+                                <th>Ingredients</th>
+                                <th>Instructions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Butter</li>
+                                        <li>Minced garlic</li>
+                                        <li>Whipping cream</li>
+                                        <li>Parmesan cheese</li>
+                                        <li>Garlic pepper (with Parsley flakes) and salt</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ol>
+                                        <li>Cook pasta.</li>
+                                        <li>Cook sauce.</li>
+                                        <li>Combine all ingredients.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--Lasagna-->
+                <div class="recipe-card">
+                    <div class="hhh">
+                        <img src="images/lasagna.jpg" alt="lasagna" style="width:100%">
+                        <div class="content">
+                            <h1><strong>Lasagna</strong></h1>
+                            <p>Lasagne comes from the Italian city of Naples, though the first references to what we now think of as the dish came in a 14th century English cookbook.</p>
+                        </div>
+                    </div>
+                    <table class="recipe-table">
+                        <thead>
+                            <tr>
+                                <th>Ingredients</th>
+                                <th>Instructions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Garlic</li>
+                                        <li>Ground beef</li>
+                                        <li>Spaghetti sauce</li>
+                                        <li>Lasagna noodles</li>
+                                        <li>Cottage cheese</li>
+                                        <li>Mozzarella cheese</li>
+                                        <li>Parmesan cheese</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ol>
+                                        <li>Cook beef and garlic with sauce.</li>
+                                        <li>Lay noodles into the pan.</li>
+                                        <li>Spread beef mixture and cheese.</li>
+                                        <li>Cook in a preheated oven.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--Ravioli-->
+                <div class="recipe-card">
+                    <div class="hhh">
+                        <img src="images/Ravioli.jpg" alt="Ravioli" style="width:100%">
+                        <div class="content">
+                            <h1><strong>Ravioli</strong></h1>
+                            <p>Ravioli is referred to in literature from both Prato and Venice circa the 1500s, and usually served cooked in a broth or sauce.</p>
+                        </div>
+                    </div>
+                    <table class="recipe-table">
+                        <thead>
+                            <tr>
+                                <th>Ingredients</th>
+                                <th>Instructions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Flour</li>
+                                        <li>Eggs</li>
+                                        <li>Olive oil</li>
+                                        <li>Whole Milk Ricotta</li>
+                                        <li>Mascarpone cheese</li>
+                                        <li>Fresh Basil</li>
+                                        <li>Parmesan Cheese</li>
+                                        <li>Egg</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ol>
+                                        <li>Make Pasta Dough.</li>
+                                        <li>Make Ravioli Filling.</li>
+                                        <li>Roll Pasta Dough Into Sheets.</li>
+                                        <li>Assemble & Cut Ravioli.</li>
+                                        <li>Freeze.</li>
+                                        <li>Cook.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="form-section">
+                        <h2>Submit Your Recipe</h2>
+                        <form action="/submit-recipe" method="post">
+                            <label for="recipe-name">Recipe Name:</label>
+                            <input type="text" id="recipe-name" name="recipe-name" required><br><br>
+
+                            <label for="ingredients">Ingredients:</label>
+                            <textarea id="ingredients" name="ingredients" rows="4" cols="50" required></textarea><br><br>
+
+                            <label for="instructions">Instructions:</label>
+                            <textarea id="instructions" name="instructions" rows="4" cols="50" required></textarea><br><br>
+
+                            <input type="submit" value="Submit Recipe">
+                        </form>
+                    </div>
+
                 </div>
             </div>
-            <table class="recipe-table">
-                <thead>
-                    <tr>
-                        <th>Ingredients</th>
-                        <th>Instructions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>Spaghetti</li>
-                                <li>eggs</li>
-                                <li>Parmesan</li>
-                                <li>cheese</li>
-                                <li>black pepper</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ol>
-                                <li>Cook spaghetti. </li>
-                                <li>Cook pancetta. </li>
-                                <li>Mix eggs and cheese. </li>
-                                <li>Combine all ingredients.</li>
-                            </ol>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
-
-        <!--Bolognese-->
-        <div class="recipe-card">
-            <div class="hhh">
-                <img src="images/bolognese.jpg" alt="bolognese" style="width:100%">
-                <div class="content">
-                    <h1><strong>Bolognese</strong></h1>
-                    <p>Originated in Imola, a northern Italian city west of Bologna some time around the late 1800s - when the first reference to the dish’s ragu sauce was recorded.</p>
-                </div>
-            </div>
-            <table class="recipe-table">
-                <thead>
-                    <tr>
-                        <th>Ingredients</th>
-                        <th>Instructions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>Onion</li>
-                                <li>Ground beef</li>
-                                <li>Tomatoes</li>
-                                <li>Garlic</li>
-                                <li>Tomato paste</li>
-                                <li>Spaghetti</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ol>
-                                <li>Cook onions with garlic.</li>
-                                <li>Add beef, wait 8 minutes, then add tomatoes.</li>
-                                <li>Cook spaghetti.</li>
-                                <li>Combine all ingredients.</li>
-                            </ol>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!--Fettuccine Alfredo-->
-        <div class="recipe-card">
-            <div class="hhh">
-                <img src="images/Fettuccine Alfredo.jpg" alt="Fettuccine" style="width:100%">
-                <div class="content">
-                    <h1><strong>Fettuccine Alfredo</strong></h1>
-                    <p>The Alfredo part of the name refers to Alfredo di Lelio, who made great ceremony of having the dish prepared table-side at his Rome restaurant in the mid 20th century.</p>
-                </div>
-            </div>
-            <table class="recipe-table">
-                <thead>
-                    <tr>
-                        <th>Ingredients</th>
-                        <th>Instructions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>Butter</li>
-                                <li>Minced garlic</li>
-                                <li>Whipping cream</li>
-                                <li>Parmesan cheese</li>
-                                <li>Garlic pepper (with Parsley flakes) and salt</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ol>
-                                <li>Cook pasta.</li>
-                                <li>Cook sauce.</li>
-                                <li>Combine all ingredients.</li>
-                            </ol>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!--Lasagna-->
-        <div class="recipe-card">
-            <div class="hhh">
-                <img src="images/lasagna.jpg" alt="lasagna" style="width:100%">
-                <div class="content">
-                    <h1><strong>Lasagna</strong></h1>
-                    <p>Lasagne comes from the Italian city of Naples, though the first references to what we now think of as the dish came in a 14th century English cookbook.</p>
-                </div>
-            </div>
-            <table class="recipe-table">
-                <thead>
-                    <tr>
-                        <th>Ingredients</th>
-                        <th>Instructions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>Garlic</li>
-                                <li>Ground beef</li>
-                                <li>Spaghetti sauce</li>
-                                <li>Lasagna noodles</li>
-                                <li>Cottage cheese</li>
-                                <li>Mozzarella cheese</li>
-                                <li>Parmesan cheese</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ol>
-                                <li>Cook beef and garlic with sauce.</li>
-                                <li>Lay noodles into the pan.</li>
-                                <li>Spread beef mixture and cheese.</li>
-                                <li>Cook in a preheated oven.</li>
-                            </ol>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!--Ravioli-->
-        <div class="recipe-card">
-            <div class="hhh">
-                <img src="images/Ravioli.jpg" alt="Ravioli" style="width:100%">
-                <div class="content">
-                    <h1><strong>Ravioli</strong></h1>
-                    <p>Ravioli is referred to in literature from both Prato and Venice circa the 1500s, and usually served cooked in a broth or sauce.</p>
-                </div>
-            </div>
-            <table class="recipe-table">
-                <thead>
-                    <tr>
-                        <th>Ingredients</th>
-                        <th>Instructions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>Flour</li>
-                                <li>Eggs</li>
-                                <li>Olive oil</li>
-                                <li>Whole Milk Ricotta</li>
-                                <li>Mascarpone cheese</li>
-                                <li>Fresh Basil</li>
-                                <li>Parmesan Cheese</li>
-                                <li>Egg</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ol>
-                                <li>Make Pasta Dough.</li>
-                                <li>Make Ravioli Filling.</li>
-                                <li>Roll Pasta Dough Into Sheets.</li>
-                                <li>Assemble & Cut Ravioli.</li>
-                                <li>Freeze.</li>
-                                <li>Cook.</li>
-                            </ol>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="form-section">
-                <h2>Submit Your Recipe</h2>
-                <form action="/submit-recipe" method="post">
-                    <label for="recipe-name">Recipe Name:</label>
-                    <input type="text" id="recipe-name" name="recipe-name" required><br><br>
-
-                    <label for="ingredients">Ingredients:</label>
-                    <textarea id="ingredients" name="ingredients" rows="4" cols="50" required></textarea><br><br>
-
-                    <label for="instructions">Instructions:</label>
-                    <textarea id="instructions" name="instructions" rows="4" cols="50" required></textarea><br><br>
-
-                    <input type="submit" value="Submit Recipe">
-                </form>
-            </div>
-
-        </div>
-
     </main>
 
     <footer>
