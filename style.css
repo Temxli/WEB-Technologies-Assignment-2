@@ -82,7 +82,10 @@ nav ul li a:hover {
     margin: 0 auto; /* Center it */
 }
   
-.content
+
+.hhh img {
+    vertical-align: middle;
+}
 
 .hhh .content {
     position: absolute; /* Position the background text */
@@ -92,7 +95,9 @@ nav ul li a:hover {
     color: #f1f1f1; /* Grey text */
     width: 460px; /* Full width */
     padding: 20px; /* Some padding */
-  }
+ }
+
+
 
 .main-banner {
     position: relative;
@@ -160,6 +165,33 @@ nav ul li a:hover {
     height:450px;
 }
 .images {
-    width: 450px;
-    height: 450px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.section-bg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container:hover .overlay {
+    opacity: 1;
 }

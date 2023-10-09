@@ -36,20 +36,22 @@
                 <div class="collapse navbar-collapse " id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="website.html"> Home </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Browse Recipes</a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="recipe.html"> AB </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Submit a Recipe</a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html"> Contact Us </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <div class="main-banner" id="top">
+
         <video autoplay muted loop id="bg-video">
             <source src="images/video.mp4" type="video/mp4" />
         </video>
@@ -66,40 +68,39 @@
     </div>
 
 
-    <main>        
         <section id="gallery">
             <div class="container">
                 <p class="text-center font-weight-bold h2 py-5"><i class="fa-solid fa-kitchen-set fa-bounce" style="color: #000000;"></i> Featured recipes</p>
 
                 <div class="row">
                     <div class="col-lg-4 mb-4">
-                        <div class="card">
-                            <img src="images/bolognese.jpg" alt="" class="card-img-top">
+                        <div class="card h-100">
+                            <img src="images/pizza.jpg" alt="" class="card-img-top ">
                             <div class="card-body">
-                                <h5 class="card-title">Classic Spaghetti Bolognese</h5>
-                                <p class="card-text">Indulge in the timeless Italian favorite - Spaghetti Bolognese. A rich, meaty sauce simmered to perfection and served over al dente pasta. Bellissimo!</p>
+                                <h5 class="card-title"><i class="fa-solid fa-pizza-slice fa-beat fa-sm" style="color: #000000;"></i> Pizza Perfection</h5>
+                                <p class="card-text">Explore the world of pizza with our Pizza Perfection collection! Click on this card to discover various types of mouthwatering pizzas, from classic Margherita to adventurous BBQ Chicken. This card serves as your gateway to the delicious universe of pizza, providing you with essential tips, tricks, and general information to elevate your pizza-making game. Whether you're a seasoned pizza pro or a beginner, we've got something for everyone. Let's start creating pizza magic together! 🍕👩‍🍳👨‍🍳</p>
+                                    <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+                                    <a href="" class="btn btn-outline-danger btn-sm mt-auto"><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <img src="images/cakes.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Dessert Delights</h5>
+                                <p class="card-text">Indulge your sweet tooth and satisfy your dessert cravings with our Dessert Delights collection! Click on this card to unlock a world of decadent treats, ranging from classic chocolate cake to exotic mango sorbet. This card serves as your gateway to the sweet side of life, offering essential tips, tricks, and general information for crafting delectable desserts that will impress any palate. Whether you're a baking enthusiast or just looking to satisfy your sweet cravings, we've got a dessert for every occasion. Join us in the world of delightful desserts! 🍰🍨🍫</p>
                                 <a href="" class="btn btn-outline-success btn-sm">Read More</a>
                                 <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-4">
+                    <div class="col-lg-4 mb-4 h-100">
                         <div class="card">
-                            <img src="images/ChickenAlfredo.jpg" alt="" class="card-img-top">
+                            <img src="images/grill.jpg" alt="" class="card-img-top">
                             <div class="card-body">
-                                <h5 class="card-title">Mouthwatering Chicken Alfredo</h5>
-                                <p class="card-text">Creamy, dreamy, and oh-so-delicious! Our Chicken Alfredo recipe combines tender chicken, fettuccine pasta, and a velvety Alfredo sauce. A comforting classic.</p>
-                                <a href="" class="btn btn-outline-success btn-sm">Read More</a>
-                                <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="card">
-                            <img src="images/vegan.jpg" alt="" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Vegan Quinoa Salad</h5>
-                                <p class="card-text">Elevate your salad game with our Vegan Quinoa Salad. Packed with colorful veggies, protein-rich quinoa, and a zesty vinaigrette, it's a healthy feast for the senses.</p>
+                                <h5 class="card-title">Grill Masters</h5>
+                                <p class="card-text">Ignite your passion for outdoor cooking and become a true Grill Master! Click on this card to dive into the sizzling world of barbecues, grilling techniques, marinades, and a mouthwatering array of recipes designed to elevate your grilling game. Whether you're a seasoned grill pro or just starting out, we've got the tips, tricks, and flavors to help you master the art of outdoor cooking. Fire up those grills and let's create unforgettable moments, one grill session at a time! 🔥🍔🌽</p>
                                 <a href="" class="btn btn-outline-success btn-sm">Read More</a>
                                 <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
                             </div>
@@ -108,10 +109,25 @@
                 </div>
             </div>
         </section>
-    </main>
 
-    <footer>
-        <div>
+        <section class="section-bg" id="About us" style="background-image: url(images/Aboutus.jpg); background-color: grey; background-blend-mode: multiply;" >
+            <p class="font-weight-bold h1 text-center text-warning py-5"> <em class="text-white">About Us</em></p>
+            <div class="container ">
+                <p class="font-weight-bold h1 text-center py-5">
+                    Welcome to our site - where culinary creativity meets convenience. 
+                    We're dedicated to making your cooking journey delightful and delicious. 
+                    Explore a world of recipes, tips, and a vibrant food-loving community. 
+                    Let's cook up something special together!
+                    
+                 </p>
+                
+            </div>
+
+        </section>
+
+        <footer>
+
+            
 
             <footer class="bg-dark text-center text-white">
                 <!-- Grid container -->
@@ -125,7 +141,7 @@
                         </a>
 
                         <!-- Github -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Temxli/WEB-Technologies-Assignment-2" role="button">
                             <i class="fab fa-github"></i>
                         </a>
                     </section>
@@ -134,12 +150,11 @@
                 <!-- Grid container -->
                 <!-- Copyright -->
                 <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                    © 2020 Copyright:
-                    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                    © 2023 Copyright: Recipes
+                    <a class="text-white"</a>
                 </div>
-                <!-- Copyright -->
             </footer>
-</footer>
+        </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
