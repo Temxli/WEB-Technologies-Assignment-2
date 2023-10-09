@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="367cde84-ef51-418c-9bcb-51fec4d7672a" name="Changes" comment="changes">
-      <change afterPath="$PROJECT_DIR$/images/navbaricon2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/navbaricon3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/video.mp4" afterDir="false" />
-    </list>
+    <list default="true" id="367cde84-ef51-418c-9bcb-51fec4d7672a" name="Changes" comment="changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +48,7 @@
       <workItem from="1696688169944" duration="2162000" />
       <workItem from="1696697513445" duration="715000" />
       <workItem from="1696792320095" duration="103000" />
+      <workItem from="1696872575846" duration="538000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <created>1696689038949</created>
@@ -81,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696792384440</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changes">
+      <created>1696872593253</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696872593253</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
