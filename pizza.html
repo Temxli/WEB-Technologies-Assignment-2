@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <header class="bg-white">
+    <header class="bg-white sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light pt-3 pb-3 logo">
 
             <a class="navbar-brand nav logo" href="#">
@@ -42,10 +42,11 @@
                     </ul>
                 </div>
             </div>
+            <input type="text" id="searchInput" class="form-control mb-3 float-right" placeholder="Search recipes..." style="margin-left: 800px;">
         </nav>
     </header>
     <section id="recepts">
-        <div class="py-5" style="background-image: url(images/pizza.jpg); background-color: grey; background-blend-mode: multiply; ) ">
+        <div class="py-5" style="background-image: url(images/pizza.jpg); background-color: grey; background-blend-mode: multiply;  ">
             <p class="font-weight-bold h1 text-center text-warning">Pizza <em class="text-white">Perfection</em></p>
             <p class="h3 text-center container col-lg-7 text-white">
                 At Pizza Perfection, we're on a mission to bring you the ultimate pizza experience. Our love for pizza knows no bounds, and we're here to share our passion with you.
@@ -57,16 +58,15 @@
         </div>
 
         <div class="container col-lg-10 py-5">
-            <div class="media border border-dark rounded shadow-lg p-4 mb-4 bg-light">
-                <img src="images/margo.jpeg" class="mr-3 h-25 w-25" alt="Margherita Pizza">
+
+            <div class="media border border-dark rounded shadow-lg p-4 mb-4 bg-light recipe-item " id="recipe1">
+                <img src="images/margo.jpeg" class="mr-3 w-25 h-25" alt="Margherita Pizza">
                 <div class="media-body">
                     <h5 class="mt-0">Margherita Pizza</h5>
                     <p>The classic Margherita pizza is a timeless favorite with a simple yet elegant combination of fresh ingredients.</p>
                     <div class="media mt-3">
-                        <a class="mr-5" href="#"></a>
-                        <div class="media-body">
+                        <div class="ingredient-list">
                             <h5 class="mt-0">Ingredients</h5>
-                            <p>For a delicious Margherita pizza, you'll need:</p>
                             <ul>
                                 <li>1 pizza dough</li>
                                 <li>1/2 cup tomato sauce</li>
@@ -75,12 +75,8 @@
                                 <li>Olive oil</li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="media mt-3">
-                        <a class="mr-5" href="#"></a>
-                        <div class="media-body">
+                        <div class="instruction-list">
                             <h5 class="mt-0">Instructions</h5>
-                            <p>Here's how to make Margherita pizza:</p>
                             <ol>
                                 <li>Roll out the pizza dough into a circle.</li>
                                 <li>Spread a thin layer of tomato sauce on the dough.</li>
@@ -92,18 +88,16 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div class="media border border-dark rounded shadow-lg p-4 mb-4 bg-light">
+
+            <div class="media border border-dark rounded shadow-lg p-4 mb-4 bg-light recipe-item " id="recipe2">
                 <img src="images/pepperoni.jpg" class="mr-3 w-25 h-25" alt="Pepperoni Pizza">
                 <div class="media-body">
                     <h5 class="mt-0">Pepperoni Pizza</h5>
                     <p>Pepperoni pizza is a crowd-pleaser with its savory blend of zesty tomato sauce, gooey cheese, and spicy pepperoni slices.</p>
                     <div class="media mt-3">
-                        <a class="mr-5" href="#"></a>
-                        <div class="media-body">
+                        <div class="ingredient-list">
                             <h5 class="mt-0">Ingredients</h5>
-                            <p>To make a delicious Pepperoni Pizza, you'll need:</p>
                             <ul>
                                 <li>1 pizza dough</li>
                                 <li>Tomato sauce</li>
@@ -111,12 +105,8 @@
                                 <li>Sliced pepperoni</li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="media mt-3">
-                        <a class="mr-5" href="#"></a>
-                        <div class="media-body">
+                        <div class="instruction-list">
                             <h5 class="mt-0">Instructions</h5>
-                            <p>Here's how to make Pepperoni Pizza:</p>
                             <ol>
                                 <li>Roll out the pizza dough into a circle.</li>
                                 <li>Spread a generous layer of tomato sauce on the dough.</li>
@@ -128,16 +118,15 @@
                     </div>
                 </div>
             </div>
-            <div class="media border border-dark rounded shadow-lg p-4 mb-4 bg-light">
-                <img src="images/bbq_chicken.jpg" class="mr-3 w-25 h-25 " alt="BBQ Chicken Pizza">
+
+            <div class="media border border-dark rounded shadow-lg p-4 mb-4 bg-light recipe-item " id="recipe3">
+                <img src="images/bbq_chicken.jpg" class="mr-3 w-25 h-25" alt="Apple Pie">
                 <div class="media-body">
                     <h5 class="mt-0">BBQ Chicken Pizza</h5>
                     <p>BBQ chicken pizza combines the smoky goodness of barbecue sauce with tender chicken, red onions, and a sprinkle of cilantro.</p>
                     <div class="media mt-3">
-                        <a class="mr-5" href="#"></a>
-                        <div class="media-body">
+                        <div class="ingredient-list">
                             <h5 class="mt-0">Ingredients</h5>
-                            <p>For a delicious BBQ Chicken Pizza, you'll need:</p>
                             <ul>
                                 <li>1 pizza dough</li>
                                 <li>Barbecue sauce</li>
@@ -147,12 +136,8 @@
                                 <li>Fresh cilantro for garnish</li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="media mt-3">
-                        <a class="mr-5" href="#"></a>
-                        <div class="media-body">
+                        <div class="instruction-list">
                             <h5 class="mt-0">Instructions</h5>
-                            <p>Here's how to make BBQ Chicken Pizza:</p>
                             <ol>
                                 <li>Roll out the pizza dough into a circle.</li>
                                 <li>Brush on a layer of barbecue sauce.</li>
@@ -165,36 +150,44 @@
                     </div>
                 </div>
             </div>
+            
         </div>
-        <footer>
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-3 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-3">
 
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fab fa-instagram"></i>
+                    </a>
 
+                    <!-- Github -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Temxli/WEB-Technologies-Assignment-2" role="button">
+                        <i class="fab fa-github"></i>
+                    </a>
 
-            <footer class="bg-dark text-center text-white">
-                <!-- Grid container -->
-                <div class="container p-4 pb-0">
-                    <!-- Section: Social media -->
-                    <section class="mb-4">
+                    <!--Youtube-->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fab fa-youtube"></i>
+                    </a>
 
-                        <!-- Instagram -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                            <i class="fab fa-instagram"></i>
-                        </a>
+                    <!--Twitter-->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fab fa-twitter"></i>
+                    </a>
 
-                        <!-- Github -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Temxli/WEB-Technologies-Assignment-2" role="button">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </section>
-                    <!-- Section: Social media -->
-                </div>
-                <!-- Grid container -->
-                <!-- Copyright -->
-                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                    © 2023 Copyright: Recipes
-                    <a class="text-white"></a>
-                </div>
-            </footer>
+                    <h6>Follow us for more content!</h6>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2023 Copyright: Recipes
+                <a class="text-white"></a>
+            </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
@@ -202,5 +195,6 @@
 
     </section>
     <script src="scripts/navigation.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>

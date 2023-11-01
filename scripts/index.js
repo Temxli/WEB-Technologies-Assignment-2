@@ -84,3 +84,18 @@ function navigatePrevious() {
 function getCurrentPage() {
     return window.location.pathname.split('/').pop();
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

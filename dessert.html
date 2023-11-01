@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <header class="bg-white">
+    <header class="bg-white sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light pt-3 pb-3 logo">
 
             <a class="navbar-brand nav logo" href="#">
@@ -42,27 +42,27 @@
                     </ul>
                 </div>
             </div>
+            <input type="text" id="searchInput" class="form-control mb-3 float-right" placeholder="Search recipes..." style="margin-left: 800px;">
         </nav>
     </header>
     <section class="" id="recepts">
-        <div class="py-5" style="background-image: url(images/cakes.jpg); background-color: grey; background-blend-mode: multiply; ) ">
+        <div class="py-5" style="background-image: url(images/cakes.jpg); background-color: grey; background-blend-mode: multiply;  ">
             <p class="font-weight-bold h1 text-center " style="color:#FFC0CB;">Dessert <em class="text-white">Delight</em></p>
             <p class="h3 text-center container col-lg-7 text-white">
                 "Dessert Delight" is a tantalizing journey into the world of sweet indulgence. From heavenly chocolate brownies to velvety vanilla cheesecake and comforting apple pie, our collection of dessert recipes promises to satisfy your sweet tooth. Explore these delightful creations and transform every meal into a delectable dessert experience.
             </p>
         </div>
 
-        <div class="container col-lg-10 py-5">
-            <div class="media border border-dark rounded shadow-lg p-4 mb-4 bg-light">
+        <div class="container col-lg-10 py-5" >
+
+            <div class="media border border-dark rounded shadow-lg p-4 mb-4 bg-light recipe-item " id="recipe1">
                 <img src="images/brownie.jpeg" class="mr-3 w-25 h-25" alt="Chocolate Brownie">
                 <div class="media-body">
                     <h5 class="mt-0">Chocolate Brownie</h5>
                     <p>Indulge in the rich and fudgy goodness of chocolate brownies. These decadent treats are perfect for satisfying your sweet cravings.</p>
                     <div class="media mt-3">
-                        <a class="mr-5" href="#"></a>
-                        <div class="media-body">
+                        <div class="ingredient-list">
                             <h5 class="mt-0">Ingredients</h5>
-                            <p>To make delicious Chocolate Brownies, you'll need:</p>
                             <ul>
                                 <li>1 cup (2 sticks) unsalted butter</li>
                                 <li>2 cups granulated sugar</li>
@@ -74,12 +74,8 @@
                                 <li>1/2 cup chocolate chips (optional)</li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="media mt-3">
-                        <a class="mr-5" href="#"></a>
-                        <div class="media-body">
+                        <div class="instruction-list">
                             <h5 class="mt-0">Instructions</h5>
-                            <p>Here's how to make Chocolate Brownies:</p>
                             <ol>
                                 <li>Preheat your oven to 350°F (175°C). Grease and flour a 9x13-inch baking pan.</li>
                                 <li>Melt the butter in a microwave-safe bowl and stir in sugar until well combined.</li>
@@ -94,96 +90,85 @@
                     </div>
                 </div>
             </div>
-            <div class="media border border-dark rounded shadow-lg p-4 mb-4 bg-light">
+
+            <div class="media border border-dark rounded shadow-lg p-4 mb-4 bg-light recipe-item " id="recipe2">
                 <img src="images/cheesecake.jpg" class="mr-3 w-25 h-25" alt="Vanilla Cheesecake">
                 <div class="media-body">
                     <h5 class="mt-0">Vanilla Cheesecake</h5>
-                    <p>Treat yourself to a creamy and velvety vanilla cheesecake topped with your favorite fruit compote.</p>
+                        <p>Treat yourself to a creamy and velvety vanilla cheesecake topped with your favorite fruit compote.</p>
                     <div class="media mt-3">
-                        <a class="mr-5" href="#"></a>
-                        <div class="media-body">
+                        <div class="ingredient-list">
                             <h5 class="mt-0">Ingredients</h5>
-                            <p>To make a delicious Vanilla Cheesecake, you'll need:</p>
                             <ul>
-                                <li>1 1/2 cups graham cracker crumbs</li>
-                                <li>1/4 cup granulated sugar</li>
-                                <li>1/2 cup (1 stick) unsalted butter, melted</li>
-                                <li>24 ounces cream cheese, softened</li>
-                                <li>1 cup granulated sugar</li>
-                                <li>1 teaspoon vanilla extract</li>
+                                <li>1 cup (2 sticks) unsalted butter</li>
+                                <li>2 cups granulated sugar</li>
                                 <li>4 large eggs</li>
-                                <li>Fruit compote of your choice (e.g., strawberry, raspberry)</li>
+                                <li>1 teaspoon vanilla extract</li>
+                                <li>1 cup all-purpose flour</li>
+                                <li>1/2 cup cocoa powder</li>
+                                <li>1/4 teaspoon salt</li>
+                                <li>1/2 cup chocolate chips (optional)</li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="media mt-3">
-                        <a class="mr-5" href="#"></a>
-                        <div class="media-body">
+                        <div class="instruction-list">
                             <h5 class="mt-0">Instructions</h5>
-                            <p>Here's how to make Vanilla Cheesecake:</p>
                             <ol>
-                                <li>Preheat your oven to 325°F (160°C). Grease a 9-inch springform pan.</li>
-                                <li>Combine graham cracker crumbs, 1/4 cup sugar, and melted butter. Press this mixture into the bottom of the prepared pan.</li>
-                                <li>In a separate bowl, beat cream cheese, 1 cup sugar, and vanilla extract until smooth.</li>
-                                <li>Add eggs one at a time, beating well after each addition.</li>
-                                <li>Pour the cream cheese mixture over the crust.</li>
-                                <li>Bake for 45-50 minutes or until the edges are set and the center is slightly jiggly.</li>
-                                <li>Let the cheesecake cool, then refrigerate for several hours or overnight.</li>
-                                <li>Top with your favorite fruit compote before serving.</li>
+                                <li>Preheat your oven to 350°F (175°C). Grease and flour a 9x13-inch baking pan.</li>
+                                <li>Melt the butter in a microwave-safe bowl and stir in sugar until well combined.</li>
+                                <li>Beat in the eggs and vanilla extract until the mixture is smooth.</li>
+                                <li>Whisk together flour, cocoa powder, and salt in another bowl. Gradually add this dry mixture to the wet mixture and mix until just combined.</li>
+                                <li>Fold in chocolate chips if desired.</li>
+                                <li>Pour the batter into the prepared baking pan and spread it evenly.</li>
+                                <li>Bake for 25-30 minutes or until a toothpick inserted into the center comes out with a few moist crumbs.</li>
+                                <li>Allow the brownies to cool before cutting into squares.</li>
                             </ol>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="media border border-dark rounded shadow-lg p-4 mb-4 bg-light">
+
+            <div class="media border border-dark rounded shadow-lg p-4 mb-4 bg-light recipe-item " id="recipe3">
                 <img src="images/apple_pie.jpeg" class="mr-3 w-25 h-25" alt="Apple Pie">
                 <div class="media-body">
                     <h5 class="mt-0">Apple Pie</h5>
                     <p>Enjoy a comforting slice of homemade apple pie with a flaky, buttery crust and warm cinnamon-spiced apple filling.</p>
                     <div class="media mt-3">
-                        <a class="mr-5" href="#"></a>
-                        <div class="media-body">
+                        <div class="ingredient-list">
                             <h5 class="mt-0">Ingredients</h5>
-                            <p>To make delicious Apple Pie, you'll need:</p>
                             <ul>
-                                <li>2 prepared pie crusts (one for the bottom and one for the top)</li>
-                                <li>6-7 cups peeled, sliced apples (e.g., Granny Smith)</li>
-                                <li>3/4 cup granulated sugar</li>
-                                <li>1 tablespoon all-purpose flour</li>
-                                <li>1 teaspoon ground cinnamon</li>
-                                <li>1/4 teaspoon ground nutmeg</li>
-                                <li>1 tablespoon lemon juice</li>
-                                <li>2 tablespoons unsalted butter, cut into small pieces</li>
-                                <li>1 egg (for egg wash)</li>
+                                <li>1 cup (2 sticks) unsalted butter</li>
+                                <li>2 cups granulated sugar</li>
+                                <li>4 large eggs</li>
+                                <li>1 teaspoon vanilla extract</li>
+                                <li>1 cup all-purpose flour</li>
+                                <li>1/2 cup cocoa powder</li>
+                                <li>1/4 teaspoon salt</li>
+                                <li>1/2 cup chocolate chips (optional)</li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="media mt-3">
-                        <a class="mr-5" href="#"></a>
-                        <div class="media-body">
+                        <div class="instruction-list">
                             <h5 class="mt-0">Instructions</h5>
-                            <p>Here's how to make Apple Pie:</p>
                             <ol>
-                                <li>Preheat your oven to 425°F (220°C).</li>
-                                <li>Combine sliced apples, 3/4 cup sugar, flour, cinnamon, nutmeg, and lemon juice in a large bowl. Mix well to coat the apples evenly.</li>
-                                <li>Line a 9-inch pie dish with one of the prepared pie crusts.</li>
-                                <li>Pour the apple filling into the crust and dot with butter pieces.</li>
-                                <li>Cover with the second pie crust and crimp the edges to seal.</li>
-                                <li>Cut a few slits in the top crust to allow steam to escape.</li>
-                                <li>Beat the egg and brush it over the top crust for a golden finish.</li>
-                                <li>Bake for 45-50 minutes or until the crust is golden and the filling is bubbling.</li>
-                                <li>Let it cool before slicing and serving.</li>
+                                <li>Preheat your oven to 350°F (175°C). Grease and flour a 9x13-inch baking pan.</li>
+                                <li>Melt the butter in a microwave-safe bowl and stir in sugar until well combined.</li>
+                                <li>Beat in the eggs and vanilla extract until the mixture is smooth.</li>
+                                <li>Whisk together flour, cocoa powder, and salt in another bowl. Gradually add this dry mixture to the wet mixture and mix until just combined.</li>
+                                <li>Fold in chocolate chips if desired.</li>
+                                <li>Pour the batter into the prepared baking pan and spread it evenly.</li>
+                                <li>Bake for 25-30 minutes or until a toothpick inserted into the center comes out with a few moist crumbs.</li>
+                                <li>Allow the brownies to cool before cutting into squares.</li>
                             </ol>
                         </div>
                     </div>
                 </div>
             </div>
+                
         </div>
         <footer class="bg-dark text-center text-white">
             <!-- Grid container -->
-            <div class="container p-4 pb-0">
+            <div class="container p-3 pb-0">
                 <!-- Section: Social media -->
-                <section class="mb-4">
+                <section class="mb-3">
 
                     <!-- Instagram -->
                     <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
@@ -194,6 +179,18 @@
                     <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Temxli/WEB-Technologies-Assignment-2" role="button">
                         <i class="fab fa-github"></i>
                     </a>
+
+                    <!--Youtube-->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                    <!--Twitter-->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <h6>Follow us for more content!</h6>
                 </section>
                 <!-- Section: Social media -->
             </div>
@@ -201,7 +198,7 @@
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
                 © 2023 Copyright: Recipes
-                <a class="text-white"</a>
+                <a class="text-white"></a>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -210,5 +207,6 @@
 
     </section>
     <script src="scripts/navigation.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>

@@ -195,5 +195,89 @@ nav ul li a:hover {
 .container:hover .overlay {
     opacity: 1;
 }
-/* Add your preferred styles for the video element here */
 
+
+
+/*-----------------------------*/
+
+
+#searchInput {
+    width: 200px; 
+    margin-top: 10px; 
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.image-container {
+    width: 150px; /* Adjust the width of the image container as needed */
+}
+
+.ingredient-list,
+.instruction-list {
+    flex-basis: 50%; /* Set both lists to occupy 50% of the available width */
+}
+
+@media (max-width: 768px) {
+    .ingredient-list,
+    .instruction-list {
+        flex-basis: 100%; /* On smaller screens, make the lists occupy 100% width */
+    }
+}
+
+.ingredient-card,
+.instruction-card {
+    flex-basis: 48%;
+    border: none; /* Remove the border */
+    margin: 0 1%;
+    border-radius: 15px; /* Add border-radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for the shadow effect */
+    transition: box-shadow 0.3s ease; /* Add transition for a smooth shadow effect */
+}
+
+.ingredient-card:hover,
+.instruction-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjust the shadow on hover */
+}
+
+@media (max-width: 768px) {
+    .ingredient-card,
+    .instruction-card {
+        flex-basis: 100%;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+.media-body {
+    padding-top: 20px; /* Adjust the top padding inside the media body */
+}
+
+/* styles/style.css */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+  
+.recipe-item {
+    animation: fadeIn 1.0s ease-in-out; /* Apply fade-in animation to recipe items */
+}
+  
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Style for navbar background and text color change */
+.sticky-top.scrolled {
+    background-color: #333; /* Change this to your desired background color */
+    color: #fff; /* Change this to your desired text color */
+}

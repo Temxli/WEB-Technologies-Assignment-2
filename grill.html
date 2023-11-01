@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <header class="bg-white">
+    <header class="bg-white sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light pt-3 pb-3 logo">
 
             <a class="navbar-brand nav logo" href="#">
@@ -42,11 +42,12 @@
                     </ul>
                 </div>
             </div>
+            <input type="text" id="searchInput" class="form-control mb-3 float-right" placeholder="Search recipes..." style="margin-left: 800px;">
         </nav>
     </header>
 
     <section class="" id="recepts">
-        <div class="py-5" style="background-image: url(images/grill.jpg); background-color: grey; background-blend-mode: multiply; ) ">
+        <div class="py-5" style="background-image: url(images/grill.jpg); background-color: grey; background-blend-mode: multiply;  ">
             <p class="font-weight-bold h1 text-center text-danger">Grill <em class="text-white">Master</em></p>
             <p class="h3 text-center container col-lg-7 text-white">
                 "Grill Master's Paradise"
@@ -57,17 +58,17 @@
             </p>
         </div>
 
-        <div class="container col-lg-10 py-5">
-            <div class="media border border-dark rounded shadow-lg p-4 mb-4 bg-light">
-                <img src="images/steak.jpg" class="mr-3 w-25 h-25" alt="Grilled Steak">
+
+        <div class="container col-lg-10 py-5" >
+
+            <div class="media border border-dark rounded shadow-lg p-4 mb-4 bg-light recipe-item " id="recipe1">
+                <img src="images/steak.jpg" class="mr-3 w-25 h-25" alt="Chocolate Brownie">
                 <div class="media-body">
                     <h5 class="mt-0">Grilled Steak</h5>
-                    <p>Indulge in the succulent perfection of a perfectly grilled steak, seared to perfection and bursting with flavor.</p>
+                    <p>Indulge in the rich and fudgy goodness of chocolate brownies. These decadent treats are perfect for satisfying your sweet cravings.</p>
                     <div class="media mt-3">
-                        <a class="mr-5" href="#"></a>
-                        <div class="media-body">
+                        <div class="ingredient-list">
                             <h5 class="mt-0">Ingredients</h5>
-                            <p>To make delicious Grilled Steak, you'll need:</p>
                             <ul>
                                 <li>2 boneless ribeye steaks</li>
                                 <li>2 tablespoons olive oil</li>
@@ -76,12 +77,8 @@
                                 <li>Fresh rosemary sprigs for garnish</li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="media mt-3">
-                        <a class="mr-5" href="#"></a>
-                        <div class="media-body">
+                        <div class="instruction-list">
                             <h5 class="mt-0">Instructions</h5>
-                            <p>Here's how to make Grilled Steak:</p>
                             <ol>
                                 <li>Preheat your grill to high heat.</li>
                                 <li>Brush steaks with olive oil and rub with minced garlic.</li>
@@ -94,16 +91,15 @@
                     </div>
                 </div>
             </div>
-            <div class="media border border-dark rounded shadow-lg p-4 mb-4 bg-light">
-                <img src="images/chicken.jpg" class="mr-3 w-25 h-25" alt="Grilled Lemon Herb Chicken">
+
+            <div class="media border border-dark rounded shadow-lg p-4 mb-4 bg-light recipe-item " id="recipe2">
+                <img src="images/chicken.jpg" class="mr-3 w-25 h-25" alt="Vanilla Cheesecake">
                 <div class="media-body">
                     <h5 class="mt-0">Grilled Lemon Herb Chicken</h5>
                     <p>Experience the bright and zesty flavors of grilled lemon herb chicken, tender and packed with fresh herbs.</p>
                     <div class="media mt-3">
-                        <a class="mr-5" href="#"></a>
-                        <div class="media-body">
+                        <div class="ingredient-list">
                             <h5 class="mt-0">Ingredients</h5>
-                            <p>To make delicious Grilled Lemon Herb Chicken, you'll need:</p>
                             <ul>
                                 <li>4 boneless, skinless chicken breasts</li>
                                 <li>Zest and juice of 2 lemons</li>
@@ -114,12 +110,8 @@
                                 <li>Salt and freshly ground black pepper</li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="media mt-3">
-                        <a class="mr-5" href="#"></a>
-                        <div class="media-body">
+                        <div class="instruction-list">
                             <h5 class="mt-0">Instructions</h5>
-                            <p>Here's how to make Grilled Lemon Herb Chicken:</p>
                             <ol>
                                 <li>In a bowl, combine lemon zest, lemon juice, olive oil, minced garlic, basil, parsley, salt, and black pepper to make a marinade.</li>
                                 <li>Place chicken breasts in a resealable plastic bag and pour the marinade over them. Seal the bag and refrigerate for at least 30 minutes.</li>
@@ -131,16 +123,15 @@
                     </div>
                 </div>
             </div>
-            <div class="media border border-dark rounded shadow-lg p-4 mb-4 bg-light">
-                <img src="images/vegetables.jpg" class="mr-3 w-25 h-25" alt="Grilled Vegetable Skewers">
+
+            <div class="media border border-dark rounded shadow-lg p-4 mb-4 bg-light recipe-item " id="recipe3">
+                <img src="images/vegetables.jpg" class="mr-3 w-25 h-25" alt="Apple Pie">
                 <div class="media-body">
                     <h5 class="mt-0">Grilled Vegetable Skewers</h5>
                     <p>Elevate your grilling game with colorful and flavorful vegetable skewers, perfect as a side or a vegetarian main.</p>
                     <div class="media mt-3">
-                        <a class="mr-5" href="#"></a>
-                        <div class="media-body">
+                        <div class="ingredient-list">
                             <h5 class="mt-0">Ingredients</h5>
-                            <p>To make delicious Grilled Vegetable Skewers, you'll need:</p>
                             <ul>
                                 <li>Assorted vegetables (e.g., bell peppers, zucchini, cherry tomatoes, red onions, mushrooms)</li>
                                 <li>Olive oil</li>
@@ -150,12 +141,8 @@
                                 <li>Salt and freshly ground black pepper</li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="media mt-3">
-                        <a class="mr-5" href="#"></a>
-                        <div class="media-body">
+                        <div class="instruction-list">
                             <h5 class="mt-0">Instructions</h5>
-                            <p>Here's how to make Grilled Vegetable Skewers:</p>
                             <ol>
                                 <li>Preheat your grill to medium-high heat.</li>
                                 <li>Cut vegetables into bite-sized pieces.</li>
@@ -169,15 +156,14 @@
                     </div>
                 </div>
             </div>
-
-
-
+                
         </div>
+        
         <footer class="bg-dark text-center text-white">
             <!-- Grid container -->
-            <div class="container p-4 pb-0">
+            <div class="container p-3 pb-0">
                 <!-- Section: Social media -->
-                <section class="mb-4">
+                <section class="mb-3">
 
                     <!-- Instagram -->
                     <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
@@ -188,6 +174,18 @@
                     <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Temxli/WEB-Technologies-Assignment-2" role="button">
                         <i class="fab fa-github"></i>
                     </a>
+
+                    <!--Youtube-->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                    <!--Twitter-->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <h6>Follow us for more content!</h6>
                 </section>
                 <!-- Section: Social media -->
             </div>
@@ -195,7 +193,7 @@
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
                 © 2023 Copyright: Recipes
-                <a class="text-white"</a>
+                <a class="text-white"></a>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -204,5 +202,6 @@
 
     </section>
     <script src="scripts/navigation.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>
