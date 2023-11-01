@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="367cde84-ef51-418c-9bcb-51fec4d7672a" name="Changes" comment="changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/bbqVideo.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/dessertVideo.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pizzaVideo.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sounds/button.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/WEB-Technologies-Assignment-2/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/WEB-Technologies-Assignment-2/v16/.suo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dessert.html" beforeDir="false" afterPath="$PROJECT_DIR$/dessert.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grill.html" beforeDir="false" afterPath="$PROJECT_DIR$/grill.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pizza.html" beforeDir="false" afterPath="$PROJECT_DIR$/pizza.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +68,7 @@
       <workItem from="1696885246366" duration="26000" />
       <workItem from="1696887635327" duration="689000" />
       <workItem from="1696889086147" duration="46000" />
+      <workItem from="1698848907625" duration="1221000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <created>1696689038949</created>
@@ -138,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696889124784</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="changes">
+      <created>1698848922532</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1698848922532</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
