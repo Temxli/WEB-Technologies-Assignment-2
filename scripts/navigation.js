@@ -29,10 +29,3 @@ function navigatePrevious() {
 function getCurrentPage() {
     return window.location.pathname.split('/').pop();
 }
-function fadeOutAndRedirect(targetPage) {
-    const body = document.body;
-    body.style.opacity = 0;
-    setTimeout(function () {
-        window.location.href = targetPage;
-    }, 500); // Adjust the time (in milliseconds) for the fade-out effect
-}
